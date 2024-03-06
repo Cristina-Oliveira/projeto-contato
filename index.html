@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato do Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Dados Do Usuário</h1>
+        </header>
+        <form id="form-lista">
+            <input type="text"  id="nome-usuario" placeholder=" Nome do usuário" required>
+            <input type="tel" id="tel-usuario" placeholder="Telefone do usuário" required pattern="[0-9]{10,11}">
+            <button type="submit">Adicionar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Usuário: </th>
+                    <th>Telefone do Usuário: </th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
